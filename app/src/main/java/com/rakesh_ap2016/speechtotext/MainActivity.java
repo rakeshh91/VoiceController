@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        setTitle("Intugine");
+        setTitle("Voice Controller");
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -204,7 +204,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                         intentPrevious.putExtra("command", "previous");
                         sendBroadcast(intentPrevious);
                     }
-                    if((result.get(0).toLowerCase()).equals("boss")|(result.get(0).toLowerCase()).equals("pause")){
+                    if((result.get(0).toLowerCase()).equals("pause")){
                         if(mediaPlayer.isPlaying()){
                             mediaPlayer.pause();
                         }else {

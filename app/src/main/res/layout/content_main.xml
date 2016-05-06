@@ -61,7 +61,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:text="@string/tap_on_mic"
             android:textColor="#C4C4C9"
             android:textSize="15sp"
@@ -71,11 +71,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Voice Commands:"
+        android:text="Voice Commands to control your default music player :"
         android:layout_marginTop="70dp"
         android:padding="5dp"
         android:textColor="#C4C4C9"
-        android:textSize="40sp"
+        android:textSize="25sp"
         android:textStyle="normal"
         android:id="@+id/instructions"
         android:layout_alignParentTop="true"
@@ -83,11 +83,22 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1) Play command - Continue Song"
-       android:layout_below="@+id/instructions"
+        android:text="Note: Open google play music and run a playlist in background. Then Open this app to control the player."
+        android:layout_below="@+id/instructions"
         android:padding="5dp"
         android:textColor="#C4C4C9"
-        android:textSize="22sp"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:id="@+id/musicinstruction"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1) Play command - Continue Song"
+       android:layout_below="@+id/musicinstruction"
+        android:padding="5dp"
+        android:textColor="#C4C4C9"
+        android:textSize="20sp"
         android:textStyle="normal"
         android:id="@+id/commandPlay"
         />
@@ -98,7 +109,7 @@
         android:layout_below="@+id/commandPlay"
         android:padding="5dp"
         android:textColor="#C4C4C9"
-        android:textSize="22sp"
+        android:textSize="20sp"
         android:textStyle="normal"
         android:id="@+id/commandPause"
          />
@@ -110,7 +121,7 @@
         android:layout_below="@+id/commandPause"
         android:padding="5dp"
         android:textColor="#C4C4C9"
-        android:textSize="22sp"
+        android:textSize="20sp"
         android:textStyle="normal"
         android:id="@+id/commandNext"
          />
@@ -122,7 +133,7 @@
         android:layout_below="@+id/commandNext"
         android:padding="5dp"
         android:textColor="#C4C4C9"
-        android:textSize="22sp"
+        android:textSize="20sp"
         android:textStyle="normal"
         android:id="@+id/commandPrevious"
         />
@@ -130,11 +141,23 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="5) Shake the phone to play next song"
+        android:text="5) Name of the song present in the device"
         android:layout_below="@+id/commandPrevious"
         android:padding="5dp"
         android:textColor="#C4C4C9"
-        android:textSize="22sp"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:id="@+id/commandSongName"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6) Shake the phone to play next song"
+        android:layout_below="@+id/commandSongName"
+        android:padding="5dp"
+        android:textColor="#C4C4C9"
+        android:textSize="20sp"
         android:textStyle="normal"
         android:id="@+id/shakedetect"
         />
