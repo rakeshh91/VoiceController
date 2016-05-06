@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rakesh_ap2016.speechtotext.MainActivity"
+    android:background="#252338"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main"
+    android:id = "@+id/layout">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/voiceimg"
+        android:layout_below="@+id/note">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textLayout"
+            android:visibility="gone">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#C4C4C9"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:text="Text: "
+            />
+        <TextView
+            android:id="@+id/txtSpeechInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView"
+            android:textColor="#C4C4C9"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:text=""/>
+        </RelativeLayout>
+        <ImageButton
+            android:id="@+id/btnSpeak"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@null"
+            android:src="@mipmap/voice"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/tap_on_mic"
+            android:textColor="#C4C4C9"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voice Commands:"
+        android:layout_marginTop="70dp"
+        android:padding="5dp"
+        android:textColor="#C4C4C9"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        android:id="@+id/instructions"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1) Play command - Continue Song"
+       android:layout_below="@+id/instructions"
+        android:padding="5dp"
+        android:textColor="#C4C4C9"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        android:id="@+id/commandPlay"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2) Pause command - Stop Song"
+        android:layout_below="@+id/commandPlay"
+        android:padding="5dp"
+        android:textColor="#C4C4C9"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        android:id="@+id/commandPause"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3) Next command - Next Song"
+        android:layout_below="@+id/commandPause"
+        android:padding="5dp"
+        android:textColor="#C4C4C9"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        android:id="@+id/commandNext"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4) Previous command - Previous Song"
+        android:layout_below="@+id/commandNext"
+        android:padding="5dp"
+        android:textColor="#C4C4C9"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        android:id="@+id/commandPrevious"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5) Shake the phone to play next song"
+        android:layout_below="@+id/commandPrevious"
+        android:padding="5dp"
+        android:textColor="#C4C4C9"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        android:id="@+id/shakedetect"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note: Input previous command twice to go to previous song"
+        android:layout_below="@+id/shakedetect"
+        android:padding="5dp"
+        android:textColor="#C4C4C9"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:id="@+id/note"
+        />
+</RelativeLayout>
+</ScrollView>
